@@ -1,0 +1,76 @@
+/* frontend/src/styles/tiptap.css */
+
+.tiptap-editor .ProseMirror {
+  @apply bg-bg-tertiary text-text-primary rounded-b-lg p-6 min-h-[300px] outline-none;
+  caret-color: var(--accent-highlight);
+}
+
+.tiptap-editor .ProseMirror > * + * {
+  margin-top: 0.75em;
+}
+
+.tiptap-editor .ProseMirror h1 {
+  @apply font-display text-3xl font-bold;
+}
+
+.tiptap-editor .ProseMirror h2 {
+  @apply font-display text-2xl font-semibold;
+}
+
+.tiptap-editor .ProseMirror h3 {
+  @apply font-display text-xl font-medium;
+}
+
+.tiptap-editor .ProseMirror p {
+  @apply font-editorial leading-relaxed;
+}
+
+.tiptap-editor .ProseMirror a {
+  @apply text-accent-highlight underline underline-offset-2;
+}
+
+.tiptap-editor .ProseMirror code {
+  @apply font-mono bg-bg-secondary text-accent-highlight px-1.5 py-0.5 rounded text-sm;
+}
+
+.tiptap-editor .ProseMirror pre {
+  @apply bg-bg-secondary p-4 rounded-lg overflow-x-auto;
+}
+
+.tiptap-editor .ProseMirror pre code {
+  @apply bg-transparent text-text-primary p-0;
+}
+
+.tiptap-editor .ProseMirror blockquote {
+  @apply border-l-4 border-accent-highlight pl-4 italic text-text-secondary;
+}
+
+.tiptap-editor .ProseMirror ul,
+.tiptap-editor .ProseMirror ol {
+  @apply pl-6;
+}
+
+.tiptap-editor .ProseMirror ul {
+  list-style-type: disc;
+}
+
+.tiptap-editor .ProseMirror ol {
+  list-style-type: decimal;
+}
+
+.tiptap-editor .ProseMirror img {
+  @apply rounded-lg max-w-full h-auto;
+}
+
+/* Toolbar */
+.tiptap-toolbar {
+  @apply flex flex-wrap gap-1 p-2 bg-bg-secondary border-b border-border-subtle rounded-t-lg;
+}
+
+.tiptap-toolbar button {
+  @apply p-2 rounded text-text-secondary hover:text-text-primary hover:bg-bg-tertiary transition-colors;
+}
+
+.tiptap-toolbar button.is-active {
+  @apply bg-accent-highlight/20 text-accent-highlight;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "BlogPlatform",
+  "short_name": "BlogPlatform",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "description": "A modern blogging platform",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ]
+}
