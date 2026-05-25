@@ -23,12 +23,7 @@ export default defineConfig({
     outDir: 'dist',
     sourcemap: true,
     rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom', 'react-router-dom'],
-          editor: ['@tiptap/react', '@tiptap/starter-kit'],
-        },
-      },
+      output: {},
     },
   },
 });
